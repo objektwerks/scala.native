@@ -18,7 +18,7 @@ lazy val scala_native = crossProject(JVMPlatform, NativePlatform)
   )
   .nativeSettings(
     libraryDependencies ++= Seq(
-      "org.scalatest" % "scalatest_native0.4_2.13" % "3.2.9" % Test
+      "org.scalatest" %%% "scalatest" % "3.2.9" % Test
     ),
     nativeLinkStubs := true,
     nativeConfig ~= {
