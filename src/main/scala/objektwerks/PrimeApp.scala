@@ -6,6 +6,6 @@ object Primeapp {
     println("Provide a number: ")
     val line = readLine()
     val number = if (line == null) 1 else line.toIntOption.getOrElse(1)
-    println(s"Is this number: $number prime: ${Prime.isPrime(number)}")
+    println(s"Is $number prime: ${Prime.isPrime(number)}")
   }
 }
