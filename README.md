@@ -13,4 +13,5 @@ Test
 
 Run
 ---
+>Currently, both PrimeApp and PrimeTest run as expected via Intellij. But not via Sbt.
 1. sbt run
