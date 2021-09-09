@@ -7,14 +7,22 @@ Install
 >See http://www.scala-native.org/en/latest/user/setup.html for details.
 1. brew install llvm
 
+Cross Project
+-------------
+>Cross project is currently disabled. See plugins.sbt and build.sbt.
+
+Notes
+-----
+1. In crossproject mode, Sbt fails to find Scalatest dependencies; yet JVM and Native tests pass.
+2. PrimeApp does execute correctly via Sbt.
+
 Test
 ----
->Sbt fails to recognize Scalatest dependencies; yet JVM and Native unit tests pass.
 1. sbt clean test
 
 Run
 ---
->Currently, both PrimeApp and PrimeTest run as expected via Intellij. But not via Sbt.
+>StdIn.readLine is ignored in PrimeApp!
 1. sbt run
 
 Publish
