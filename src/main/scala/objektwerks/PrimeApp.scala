@@ -1,6 +1,7 @@
 package objektwerks
 
 import scala.io.StdIn.readLine
+
 object PrimeApp {
   def main(args: Array[String]): Unit = {
     println("Enter a number: ")
