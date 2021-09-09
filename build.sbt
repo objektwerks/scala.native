@@ -1,7 +1,8 @@
 enablePlugins(ScalaNativePlugin)
 
+name := "scala.native"
+
 lazy val core = Defaults.coreDefaultSettings ++ Seq(
-  name := "scala.native",
   organization := "objektwerks",
   version := "0.1-SNAPSHOT",
   scalaVersion := "2.13.6",
