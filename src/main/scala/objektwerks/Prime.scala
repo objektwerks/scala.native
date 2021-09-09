@@ -1,4 +1,7 @@
+package objektwerks
+
 import scala.annotation.tailrec
+
 object Prime {
   def isPrime(n: Int): Boolean = {
     @tailrec
