@@ -9,12 +9,17 @@ Install
 
 Test
 ----
+>Sbt fails to recognize Scalatest dependencies; yet JVM and Native unit tests pass.
 1. sbt clean test
 
 Run
 ---
 >Currently, both PrimeApp and PrimeTest run as expected via Intellij. But not via Sbt.
 1. sbt run
+
+Publish
+-------
+1. sbt clean compile publishLocal
 
 Resources
 ---------
