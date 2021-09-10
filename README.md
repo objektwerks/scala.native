@@ -22,8 +22,8 @@ Test
 
 Run
 ---
->StdIn.readLine is ignored in PrimeApp!
-1. sbt run
+1. target/scala-2.13/scala-native-out
+2. file target/scala-2.13/scala-native-out
 
 Publish
 -------
