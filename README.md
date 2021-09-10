@@ -12,6 +12,10 @@ Questions
 1. In crossproject mode, Sbt fails to find Scalatest dependencies; yet JVM and Native tests pass. Why?
 2. How to create Apple DMG from Apple M1 console app?
 
+Cross Project
+-------------
+>Cross project is currently disabled. See plugins.sbt and build.sbt for details.
+
 Test
 ----
 1. sbt clean test
@@ -24,10 +28,6 @@ Run
 Publish
 -------
 1. sbt clean compile package publishLocal
-
-Cross Project
--------------
->Cross project is currently disabled. See plugins.sbt and build.sbt for details.
 
 Resources
 ---------
