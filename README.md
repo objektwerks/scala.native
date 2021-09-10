@@ -10,7 +10,6 @@ Install
 Notes
 -----
 1. In crossproject mode, Sbt fails to find Scalatest dependencies; yet JVM and Native tests pass.
-2. PrimeApp does execute correctly via Sbt.
 
 Questions
 ---------
