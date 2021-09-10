@@ -13,7 +13,7 @@ Notes
 
 Questions
 ---------
-1. How to create Apple M1 console app?
+1. How to create Apple DMG from Apple M1 console app?
 
 Test
 ----
