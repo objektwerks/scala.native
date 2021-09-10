@@ -7,14 +7,14 @@ Install
 >See http://www.scala-native.org/en/latest/user/setup.html for details.
 1. brew install llvm
 
-Cross Project
--------------
->Cross project is currently disabled. See plugins.sbt and build.sbt.
-
 Notes
 -----
 1. In crossproject mode, Sbt fails to find Scalatest dependencies; yet JVM and Native tests pass.
 2. PrimeApp does execute correctly via Sbt.
+
+Questions
+---------
+1. How to create Apple M1 console app?
 
 Test
 ----
@@ -28,6 +28,10 @@ Run
 Publish
 -------
 1. sbt clean compile publishLocal
+
+Cross Project
+-------------
+>Cross project is currently disabled. See plugins.sbt and build.sbt.
 
 Resources
 ---------
