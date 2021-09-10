@@ -31,9 +31,10 @@ Publish
 
 Cross Project
 -------------
->Cross project is currently disabled. See plugins.sbt and build.sbt.
+>Cross project is currently disabled. See plugins.sbt and build.sbt for details.
 
 Resources
 ---------
 1. Scala Native Docs - http://www.scala-native.org/en/latest/index.html
 2. Scala Native Intro Video - https://www.youtube.com/watch?v=u2CnE-sRdBw
+3. Scala Native Performance - https://medium.com/virtuslab/revisiting-scala-native-performance-67029089f241
