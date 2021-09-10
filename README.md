@@ -27,7 +27,7 @@ Run
 
 Publish
 -------
-1. sbt clean compile publishLocal
+1. sbt clean compile package publishLocal
 
 Cross Project
 -------------
