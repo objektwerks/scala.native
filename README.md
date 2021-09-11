@@ -28,6 +28,9 @@ Run
 Publish
 -------
 1. sbt clean compile package publishLocal
+2. mv target/scala-2.13/scala-native-out target/scala-2.13/isprime
+3. sudo cp target/scala-2.13/isprime /usr/local/bin
+4. isprime
 
 Resources
 ---------
