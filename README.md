@@ -10,7 +10,6 @@ Install
 Questions
 ---------
 1. In crossproject mode, Sbt fails to find Scalatest dependencies; yet JVM and Native tests pass. Why?
-2. How to create Apple DMG from Apple M1 console app?
 
 Cross Project
 -------------
