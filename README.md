@@ -22,12 +22,13 @@ Test
 
 Run
 ---
-1. target/scala-2.13/scala-native-out  ( scala-native-out is the distributable M1 console app! )
+1. sbt clean test package publishLocal run
+2. target/scala-2.13/scala-native-out  ( scala-native-out is the distributable M1 console app! )
     * file target/scala-2.13/scala-native-out ( Mach-O 64-bit executable arm64 )
 
 Publish
 -------
-1. sbt clean compile package publishLocal
+1. sbt clean test package publishLocal run
 2. mv target/scala-2.13/scala-native-out target/scala-2.13/isprime
 3. sudo cp target/scala-2.13/isprime /usr/local/bin
 4. isprime
