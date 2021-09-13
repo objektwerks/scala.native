@@ -1,14 +1,14 @@
 Scala Native
 ------------
->Scala native feature apps and tests, built on Apple M1.
+>Scala native feature app and test built on Apple M1.
 
 Install
 -------
 >See http://www.scala-native.org/en/latest/user/setup.html for details.
 1. brew install llvm
 
-Questions
----------
+Issues
+------
 1. In crossproject mode, Sbt fails to find Scalatest dependencies; yet JVM and Native tests pass. Why?
 
 Cross Project
