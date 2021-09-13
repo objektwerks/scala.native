@@ -1,41 +1,50 @@
 import scalanative.build.Mode
 
-enablePlugins(ScalaNativePlugin)
-
-name := "scala.native"
-organization := "objektwerks"
-version := "0.1-SNAPSHOT"
-scalaVersion := "2.13.6"
-libraryDependencies ++= Seq(
-  "org.scalatest" %%% "scalatest" % "3.2.9" % Test
+// and some aliases to avoid dealing with the implicit root project
+addCommandAlias(
+  "test",
+  Seq(
+    "primes/test",
+    "primesNative/test",
+  ).mkString(";", ";", "")
 )
-nativeLinkStubs := true
-nativeConfig ~= {
-  _.withMode(Mode.releaseFast)
-}
 
-/*
-lazy val scala_native = crossProject(JVMPlatform, NativePlatform)
-  .withoutSuffixFor(JVMPlatform)
-  .crossType(CrossType.Pure)
-  .in(file("."))
-  .settings(
+addCommandAlias(
+  "clean",
+  Seq(
+    "primes/clean",
+    "primesNative/clean",
+  ).mkString(";", ";", "")
+)
+
+// could allow a command line arg as workaround to interactive
+// > runNative 13
+addCommandAlias(
+  "runNative", "primesNative/run"
+)
+
+inThisBuild(
+  List(
     organization := "objektwerks",
     version := "0.1-SNAPSHOT",
     scalaVersion := "2.13.6"
   )
-  .jvmSettings(
+)
+
+lazy val primes = crossProject(JVMPlatform, NativePlatform)
+  .withoutSuffixFor(JVMPlatform)
+  .crossType(CrossType.Pure)
+  .in(file("."))
+  .settings(
     libraryDependencies ++= Seq(
-      "org.scalatest" %% "scalatest" % "3.2.9" % Test
+          "org.scalatest" %%% "scalatest" % "3.2.9" % Test
     )
   )
+  .jvmSettings()
   .nativeSettings(
-    libraryDependencies ++= Seq(
-      "org.scalatest" %%% "scalatest" % "3.2.9" % Test
-    ),
     nativeLinkStubs := true,
+    // consider commix and lto thin for best perf
     nativeConfig ~= {
       _.withMode(Mode.releaseFast)
     }
   )
-*/
