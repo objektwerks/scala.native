@@ -1,6 +1,6 @@
 package objektwerks
 
-import org.ekrich.config.ConfigFactory
+import org.ekrich.config._
 
 object ConfApp {
   def main(args: Array[String]): Unit = {
