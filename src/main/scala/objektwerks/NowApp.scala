@@ -2,8 +2,8 @@ package objektwerks
 
 import java.util.Date
 
-object DateTimeApp {
+object NowApp {
   def main(args: Array[String]): Unit = {
-    println(s"*** Datetime: ${new Date().toString}")
+    println(s"*** Now: ${new Date().toString}")
   }
 }
