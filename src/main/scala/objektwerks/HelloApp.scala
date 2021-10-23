@@ -1,7 +1,7 @@
 package objektwerks
 
-object NowApp {
+object HelloApp {
   def main(args: Array[String]): Unit = {
-    println("Hello, Scala Native!")
+    println("*** Hello, Scala Native!")
   }
 }
