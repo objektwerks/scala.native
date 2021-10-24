@@ -11,14 +11,14 @@ Install
 
 NGINX Unit
 ----------
-1. control socket - /usr/local/var/run/unit/control.sock
-2. log file - /usr/local/var/log/unit/unit.log
+1. control socket: /usr/local/var/run/unit/control.sock
+2. log file: /usr/local/var/log/unit/unit.log
 3. curl --unix-socket /usr/local/var/run/unit/control.sock -d @config.json -XPUT localhost/config
 
 NGINX Unit Lifecycle
 --------------------
-1. start - unitd --control 127.0.0.1:7676
-2. stop - pkill unitd
+1. start: unitd --control 127.0.0.1:7676
+2. stop: pkill unitd
 
 Issues
 ------
