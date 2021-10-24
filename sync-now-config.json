@@ -12,7 +12,7 @@
   },
 
   "listeners": {
-    "*:7575": {
+    "*:7474": {
       "pass": "applications/sync_now"
     }
   }
