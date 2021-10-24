@@ -29,6 +29,12 @@ Test
 ----
 1. sbt clean test
 
+NowServer
+----------
+>Deploy to local nginx unit server:
+1. curl -X PUT --data-binary config.json --control 127.0.0.1:7474 http://localhost/config/
+2. curl http://localhost:7474
+
 Run
 ---
 1. sbt run
