@@ -8,6 +8,8 @@ version := "0.1-SNAPSHOT"
 scalaVersion := "2.13.6"
 libraryDependencies ++= Seq(
   "com.github.lolgab" %%% "snunit" % "0.0.11",
+  "com.github.lolgab" %%% "snunit-async" % "0.0.11",
+  "com.github.lolgab" %%% "snunit-routes" % "0.0.11",
   "org.ekrich" %%% "sjavatime" % "1.1.5",
   "org.ekrich" %%% "sconfig" % "1.4.5",
   "org.scalatest" %%% "scalatest" % "3.2.10" % Test
