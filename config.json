@@ -1,8 +1,8 @@
 {
   "applications": {
-    "async_now": {
+    "now": {
       "type": "external",
-      "working_directory": "$pwd/target/now-async",
+      "working_directory": "$pwd/target/now",
       "executable": "$pwd/target/scala-2.13/scala-native-out",
       "processes": 1,
       "limits": {
@@ -12,8 +12,8 @@
   },
 
   "listeners": {
-    "*:7575": {
-      "pass": "applications/async_now"
+    "*:7474": {
+      "pass": "applications/now"
     }
   }
 }
