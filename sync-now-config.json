@@ -1,0 +1,19 @@
+{
+  "applications": {
+    "sync_now": {
+      "type": "external",
+      "working_directory": "/Users/tripletail/workspace/scala.native/target/scala-2.13/scala-native-out",
+      "executable": "out",
+      "processes": 8,
+      "limits": {
+        "timeout": 1
+      }
+    }
+  },
+
+  "listeners": {
+    "*:7575": {
+      "pass": "applications/sync_now"
+    }
+  }
+}
