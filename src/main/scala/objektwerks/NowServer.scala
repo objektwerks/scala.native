@@ -6,7 +6,7 @@ import snunit._
 import snunit.routes._
 import trail._
 
-object NowAsyncServer {
+object NowServer {
   def main(args: Array[String]): Unit = {
     val now  = Root / "now"
     AsyncServerBuilder()
