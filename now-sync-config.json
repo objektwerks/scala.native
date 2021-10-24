@@ -2,9 +2,9 @@
   "applications": {
     "sync_now": {
       "type": "external",
-      "working_directory": "/Users/tripletail/workspace/scala.native/target",
-      "executable": "out",
-      "processes": 8,
+      "working_directory": "$pwd/target",
+      "executable": "$pwd/target/scala-2.13/scala-native-out",
+      "processes": 1,
       "limits": {
         "timeout": 1
       }
