@@ -12,7 +12,7 @@ Install
 NGINX Unit
 ----------
 >See documentation at: http://unit.nginx.org
-1. start: unitd --control 127.0.0.1:7676
+1. start: unitd
 2. stop: pkill unitd
 
 Cross Project
@@ -32,7 +32,9 @@ Test
 NowServer
 ----------
 >Deploy to local nginx unit server:
-1. curl -X PUT --data-binary @config.json --control 127.0.0.1:7676 http://localhost/config/applications/now
+1. curl -X PUT --data-binary @config.json \
+   --unix-socket /opt/homebrew/var/run/unit/control.sock \
+   http://localhost/config/applications/now
 2. curl http://localhost:7474
 
 Run
