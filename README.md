@@ -6,6 +6,8 @@ Install
 -------
 >See http://www.scala-native.org/en/latest/user/setup.html for details.
 1. brew install llvm
+2. brew install nginx/unit/unit
+3. brew install unit-java ( not sure about this, but requires Java )
 
 Issues
 ------
