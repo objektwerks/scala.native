@@ -15,20 +15,15 @@ NGINX Unit
 1. start: unitd --control 127.0.0.1:7676
 2. stop: pkill unitd
 
-Issues
-------
-1. In crossproject mode, Sbt fails to find Scalatest dependencies; yet JVM and Native tests pass. Why?
-
 Cross Project
 -------------
 >Cross project is currently disabled. See plugins.sbt and build.sbt for details.
 
 Issues
 ------
-1. LcalaTime in sjavatime fails to yield a valid time.
-2. ConfigFactory.load() and ConfigFactory.load("app.conf") fail to load.
-3. SNUnit SyncServer emits this linker error: ```ld: library not found for -lunit```
-4. SNUnit AsyncServer emits this linker error: ```ld: library not found for -luv```
+1. In crossproject mode, Sbt fails to find Scalatest dependencies; yet JVM and Native tests pass. Why?
+2. LcalaTime, in **sjavatime**, fails to yield a valid time.
+3. ConfigFactory.load() and ConfigFactory.load("app.conf"), in **sconfig**, fail to load configuration file.
 
 Test
 ----
