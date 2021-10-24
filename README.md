@@ -12,9 +12,9 @@ Install
 NGINX Unit
 ----------
 >See documentation at: http://unit.nginx.org
-1. start: unitd
-2. verify: ps aux | grep nginx
-3. stop: pkill unitd
+1. **start:** unitd
+2. **verify:** ps aux | grep nginx
+3. **stop:** pkill unitd
 
 Cross Project
 -------------
@@ -31,12 +31,12 @@ Test
 1. sbt clean test
 
 NowServer
-----------
+---------
 >Deploy to local nginx unit server:
 1. curl -X PUT --data-binary @config.json \
    --unix-socket /opt/homebrew/var/run/unit/control.sock \
    http://localhost/config/applications/now
-2. curl http://localhost:7474
+2. curl http://localhost:7474/now
 
 Run
 ---
