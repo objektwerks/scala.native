@@ -1,6 +1,6 @@
 {
   "applications": {
-    "test_app": {
+    "async_now": {
       "type": "external",
       "working_directory": "/Users/tripletail/workspace/scala.native/target/scala-2.13/scala-native-out",
       "executable": "out",
@@ -13,7 +13,7 @@
 
   "listeners": {
     "*:7575": {
-      "pass": "applications/now"
+      "pass": "applications/async_now"
     }
   }
 }
