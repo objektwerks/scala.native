@@ -2,7 +2,7 @@
   "applications": {
     "sync_now": {
       "type": "external",
-      "working_directory": "$pwd/target",
+      "working_directory": "$pwd/target/now-sync",
       "executable": "$pwd/target/scala-2.13/scala-native-out",
       "processes": 1,
       "limits": {
