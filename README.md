@@ -15,6 +15,11 @@ Cross Project
 -------------
 >Cross project is currently disabled. See plugins.sbt and build.sbt for details.
 
+Issues
+------
+1. LcalaTime in sjavatime fails to yield a valid time.
+2. ConfigFactory.load() and ConfigFactory.load("app.conf") fail to load.
+
 Test
 ----
 1. sbt clean test
