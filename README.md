@@ -13,7 +13,8 @@ NGINX Unit
 ----------
 >See documentation at: http://unit.nginx.org
 1. start: unitd
-2. stop: pkill unitd
+2. verify: ps aux | grep nginx
+3. stop: pkill unitd
 
 Cross Project
 -------------
