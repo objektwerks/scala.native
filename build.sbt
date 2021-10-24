@@ -18,6 +18,9 @@ nativeLinkStubs := true
 nativeConfig ~= {
   _.withMode(Mode.releaseFast)
 }
+nativeLinkingOptions ++= Seq(
+  "-L/opt/homebrew/lib"
+)
 
 /*
 lazy val scala_native = crossProject(JVMPlatform, NativePlatform)
