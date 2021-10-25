@@ -6,64 +6,29 @@ Install
 -------
 >See http://www.scala-native.org/en/latest/user/setup.html for details.
 1. brew install llvm
-2. brew install nginx/unit/unit
-3. brew install unit-java ( not sure about this, but requires Java )
-
-NGINX Unit
-----------
->See documentation at: http://unit.nginx.org
-1. **start:** unitd
-2. **verify:** ps aux | grep nginx
-3. **stop:** pkill unitd
 
 Cross Project
 -------------
 >Cross project is currently disabled. See plugins.sbt and build.sbt for details.
 
-Issues
-------
-1. In crossproject mode, Sbt fails to find Scalatest dependencies; yet JVM and Native tests pass. Why?
-2. LcalaTime, in **sjavatime**, fails to yield a valid time.
-3. ConfigFactory.load() and ConfigFactory.load("app.conf"), in **sconfig**, fail to load configuration file.
-
 Test
 ----
 1. sbt clean test
 
-NowServer
----------
->Deploy to local nginx unit server:
-1. curl -X PUT --data-binary @config.json \
-   --unix-socket /opt/homebrew/var/run/unit/control.sock \
-   http://localhost/config/applications/now
-2. curl http://localhost:7474/now
-
 Run
 ---
+>To run scala-native-out, the scala native app:
 1. sbt run
-2. Multiple main classes detected. Select one to run:
-   * [1] objektwerks.ConfApp
-   * [2] objektwerks.NowApp
-   * [3] objektwerks.NowServer
-   * [4] objektwerks.PrimeApp
-3. target/scala-2.13/scala-native-out  ( scala-native-out is the distributable M1 console app! )
-    * file target/scala-2.13/scala-native-out ( Mach-O 64-bit executable arm64 )
+2. target/scala-2.13/scala-native-out
 
 Publish
 -------
 1. sbt clean nativeLink package publishLocal
-2. Multiple main classes detected. Select one to run:
-   * [1] objektwerks.ConfApp
-   * [2] objektwerks.NowApp
-   * [3] objektwerks.NowServer
-   * [4] objektwerks.PrimeApp
-3. Select 1 or 2. For instance, select 2 ( using isprime as the executable name )
-4. mv target/scala-2.13/scala-native-out target/scala-2.13/isprime
-5. sudo cp target/scala-2.13/isprime /usr/local/bin
-6. isprime
+2. mv target/scala-2.13/scala-native-out target/scala-2.13/isprime
+3. sudo cp target/scala-2.13/isprime /usr/local/bin
+4. isprime
 
 Resources
 ---------
 1. Scala Native Docs - http://www.scala-native.org/en/latest/index.html
 2. Scala Native Intro Video - https://www.youtube.com/watch?v=u2CnE-sRdBw
-3. Scala Native Performance - https://medium.com/virtuslab/revisiting-scala-native-performance-67029089f241
