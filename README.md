@@ -7,10 +7,6 @@ Install
 >See http://www.scala-native.org/en/latest/user/setup.html for details.
 1. brew install llvm
 
-Cross Project
--------------
->Cross project is currently disabled. See plugins.sbt and build.sbt for details.
-
 Test
 ----
 1. sbt clean test
@@ -23,7 +19,7 @@ Run
 
 Publish
 -------
-1. sbt clean nativeLink package publishLocal
+1. sbt clean compile nativeLink
 2. mv target/scala-2.13/scala-native-out target/scala-2.13/isprime
 3. sudo cp target/scala-2.13/isprime /usr/local/bin
 4. isprime
