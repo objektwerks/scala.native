@@ -15,7 +15,7 @@ Run
 ---
 >To run scala-native-out, the scala native app:
 1. sbt run
-2. target/scala-2.13/scala-native-out ( the order is critical )
+2. target/scala-2.13/scala-native-out
 
 Publish
 -------
