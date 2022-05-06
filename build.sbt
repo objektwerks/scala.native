@@ -8,7 +8,7 @@ version := "0.1-SNAPSHOT"
 scalaVersion := "3.1.2"
 libraryDependencies ++= Seq(
   "com.outr" %%% "scribe" % "3.8.2",
-  "org.scalatest" %%% "scalatest" % "3.2.11" % Test
+  "org.scalatest" %%% "scalatest" % "3.2.12" % Test
 )
 nativeLinkStubs := true
 nativeConfig ~= {
