@@ -29,5 +29,5 @@ Execute
 
 Resources
 ---------
-1. Scala Native Docs - http://www.scala-native.org/en/latest/index.html
-2. Scala Native Intro Video - https://www.youtube.com/watch?v=u2CnE-sRdBw
+1. [Scala Native Docs](http://www.scala-native.org/en/latest/index.html)
+2. [Scala Native Intro Video](https://www.youtube.com/watch?v=u2CnE-sRdBw)
