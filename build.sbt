@@ -10,6 +10,9 @@ libraryDependencies ++= Seq(
   "com.outr" %%% "scribe" % "3.11.1",
   "org.scalatest" %%% "scalatest" % "3.2.15" % Test
 )
+scalacOptions ++= Seq(
+  "-Wunused:all"
+)
 nativeLinkStubs := true
 nativeConfig ~= {
   _.withMode(Mode.releaseFast)
