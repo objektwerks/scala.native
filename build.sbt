@@ -7,7 +7,7 @@ organization := "objektwerks"
 version := "0.1-SNAPSHOT
 scalaVersion := "3.3.1-RC7"
 libraryDependencies ++= Seq(
-  "com.outr" %%% "scribe" % "3.12.1",
+  "com.outr" %%% "scribe" % "3.12.2",
   "org.scalatest" %%% "scalatest" % "3.2.16" % Test
 )
 scalacOptions ++= Seq(
