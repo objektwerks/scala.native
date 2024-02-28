@@ -8,7 +8,7 @@ version := "0.1-SNAPSHOT
 scalaVersion := "3.4.1-RC1"
 libraryDependencies ++= Seq(
   "com.outr" %%% "scribe" % "3.13.0",
-  "org.scalatest" %%% "scalatest" % "3.2.17" % Test
+  "org.scalatest" %%% "scalatest" % "3.2.18" % Test
 )
 scalacOptions ++= Seq(
   "-Wunused:all"
