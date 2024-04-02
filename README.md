@@ -15,13 +15,13 @@ Run
 ---
 >To run scala-native-out, the scala native app:
 1. sbt run
-2. target/scala-2.13/scala-native-out
+2. target/scala-3.4.2-RC1/scala-native-out
 
 Publish
 -------
 1. sbt clean compile nativeLink
-2. mv target/scala-2.13/scala-native-out target/scala-2.13/isprime
-3. sudo cp target/scala-2.13/isprime /usr/local/bin
+2. mv target/scala-3.4.2-RC1/scala-native-out target/scala-3.4.2-RC1/isprime
+3. sudo cp target/scala-3.4.2-RC1/isprime /usr/local/bin
 
 Execute
 -------
