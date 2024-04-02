@@ -4,7 +4,7 @@ enablePlugins(ScalaNativePlugin)
 
 name := "scala.native"
 organization := "objektwerks"
-version := "0.1-SNAPSHOT
+version := "0.1-SNAPSHOT"
 scalaVersion := "3.4.2-RC1"
 libraryDependencies ++= Seq(
   "com.outr" %%% "scribe" % "3.13.2",
