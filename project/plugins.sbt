@@ -1,1 +1,1 @@
-addSbtPlugin("org.scala-native" % "sbt-scala-native" % "0.4.17")
+addSbtPlugin("org.scala-native" % "sbt-scala-native" % "0.4.17") // 0.5.0 branch not loading!
