@@ -9,6 +9,6 @@ scalaVersion := "3.4.1" // Only works with SN 0.5.1
 scalacOptions ++= Seq(
   "-Wunused:all"
 )
-nativeConfig ~= {
+nativeConfig ~= {3
   _.withMode(Mode.releaseFast)
 }
