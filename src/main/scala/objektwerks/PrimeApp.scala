@@ -8,4 +8,3 @@ object PrimeApp:
     val line = StdIn.readLine()
     val number = if (line == null) 1 else line.toIntOption.getOrElse(1)
     println(s"*** [println] Is $number prime: ${Prime.isPrime(number)}")
-    println(s"*** [scribe] Is $number prime: ${Prime.isPrime(number)}")
