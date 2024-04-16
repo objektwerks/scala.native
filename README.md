@@ -4,9 +4,7 @@ Scala Native
 
 Note
 ----
->Nearly all purported dependencies won't work with the current Scala Native version.
-
->Conseqently, this project has ***zero*** dependencies.
+>Only ***select*** dependencies ***will*** work with the current Scala Native version of ***0.5.1***.
 
 Install
 -------
