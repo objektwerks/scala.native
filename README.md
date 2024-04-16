@@ -2,6 +2,10 @@ Scala Native
 ------------
 >Scala native feature app and test built on Apple M1.
 
+Note
+----
+>Nearly all purported dependencies won't work with the current Scala Native version.
+
 Install
 -------
 >See http://www.scala-native.org/en/latest/user/setup.html for details.
