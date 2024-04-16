@@ -6,6 +6,8 @@ Note
 ----
 >Nearly all purported dependencies won't work with the current Scala Native version.
 
+>Conseqently, this project has ***zero*** dependencies.
+
 Install
 -------
 >See http://www.scala-native.org/en/latest/user/setup.html for details.
