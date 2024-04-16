@@ -2,12 +2,10 @@ package objektwerks
 
 import scala.io.StdIn
 
-object PrimeApp {
-  def main(args: Array[String]): Unit = {
+object PrimeApp:
+  def main(args: Array[String]): Unit =
     println("*** Enter a number: ")
     val line = StdIn.readLine()
     val number = if (line == null) 1 else line.toIntOption.getOrElse(1)
     println(s"*** [println] Is $number prime: ${Prime.isPrime(number)}")
-    scribe.info(s"*** [scribe] Is $number prime: ${Prime.isPrime(number)}")
-  }
-}
+    println(s"*** [scribe] Is $number prime: ${Prime.isPrime(number)}")
