@@ -7,10 +7,6 @@ Install
 >See http://www.scala-native.org/en/latest/user/setup.html for details.
 1. brew install llvm
 
-Test
-----
-1. sbt clean test
-
 Run
 ---
 >To run scala-native-out, the scala native app:
