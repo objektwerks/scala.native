@@ -1,6 +1,6 @@
 Scala Native
 ------------
->Scala native feature app and test built on Apple M1.
+>Scala native app - tested and built on Apple M1.
 
 Note
 ----
