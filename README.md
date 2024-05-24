@@ -4,7 +4,7 @@ Scala Native
 
 Note
 ----
->Only ***select*** dependencies ***will*** work with the current Scala Native version of ***0.5.1***.
+>Only ***select*** dependencies ***will*** work with the current Scala Native - ***0.5.1***.
 
 Install
 -------
