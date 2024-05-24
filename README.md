@@ -20,8 +20,8 @@ Run
 Publish
 -------
 1. sbt clean compile nativeLink
-2. mv target/scala-3.4.1/scala-native-out target/scala-3.4.1/isprime
-3. sudo cp target/scala-3.4.1/isprime /usr/local/bin
+2. mv target/scala-{version}/scala-native-out target/scala-{version}/isprime
+3. sudo cp target/scala-{version}/isprime /usr/local/bin
 
 Execute
 -------
