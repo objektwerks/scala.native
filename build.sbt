@@ -7,7 +7,7 @@ organization := "objektwerks"
 version := "0.2-SNAPSHOT"
 scalaVersion := "3.6.1"
 scalacOptions ++= Seq(
-  "-Wunused:all"
+  "-Wall"
 )
 nativeConfig ~= {
   _.withMode(Mode.releaseFast)
