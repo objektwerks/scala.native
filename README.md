@@ -1,10 +1,6 @@
 Scala Native
 ------------
->Scala native app - tested and built on Apple M1.
-
-Note
-----
->Only ***select*** dependencies ***will*** work with the current Scala Native - ***0.5.1***.
+>Scala native app, tested and built on Apple M1, using Scala 3.
 
 Install
 -------
