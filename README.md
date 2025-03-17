@@ -13,9 +13,7 @@ Install
 
 Run
 ---
->To run scala-native-out, the scala native app:
 1. sbt run
-2. target/scala-$version/scala-native-out
 
 Publish
 -------
