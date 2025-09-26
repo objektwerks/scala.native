@@ -1,6 +1,6 @@
 Scala Native
 ------------
->Scala native app, tested and built on Apple M1, using Scala 3.
+>Scala Native app, tested and built on Apple M1, using Scala 3.
 
 Install
 -------
