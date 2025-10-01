@@ -5,7 +5,7 @@ enablePlugins(ScalaNativePlugin)
 name := "scala.native"
 organization := "objektwerks"
 version := "0.2-SNAPSHOT"
-scalaVersion := "3.7.3"
+scalaVersion := "3.7.4-RC1"
 scalacOptions ++= Seq(
   "-Wunused:all"
 )
